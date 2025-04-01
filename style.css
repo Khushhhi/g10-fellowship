@@ -1,0 +1,478 @@
+/* Basic Reset & Font Import */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -- Accent Bar -- */
+.accent-bar {
+    height: 6px; /* Adjust height as needed */
+    width: 100%;
+    background: linear-gradient(to right, #FF6600 33.3%, #006400 33.3%, #006400 66.6%, #FFFFFF 66.6%); /* Orange, Dark Green, White */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001; /* Higher than header */
+}
+
+
+body {
+    /* Keep Inter for body text */
+    font-family: 'Inter', sans-serif;
+    background-color: #FAF8F0; /* Off-white background */
+    color: #111111; /* Dark text */
+    line-height: 1.6;
+    /* Increase padding-top to account for accent bar + header */
+    padding-top: 86px; /* Approx accent bar height + header height */
+}
+
+/* Apply Black Ops One to headings, logo, nav, buttons, etc. */
+h1, h2, h3, h4, h5, h6,
+.logo,
+nav ul li a, /* Apply to nav links */
+.faq-question,
+.apply-button,
+.cta-heading,
+.headline,
+.quote,
+.final-call,
+footer p:first-child, /* Apply to "DRAFTING NOW" */
+.styled-list li span /* Apply to [01] etc. */
+{
+    font-family: 'Black Ops One', cursive; /* Use Black Ops One */
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-weight: normal; /* Font is inherently bold */
+    letter-spacing: 1px; /* Add some spacing for stencil effect */
+}
+
+/* Specific adjustments for Black Ops One */
+.logo {
+    font-size: 1.7rem; /* Adjusted size */
+}
+
+nav ul li a {
+    font-size: 1rem;
+    padding-bottom: 5px;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+a {
+    color: #111111;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {
+    background-color: #FAF8F0;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #111111;
+    position: fixed;
+    /* Header starts below the accent bar */
+    top: 6px; /* Match accent-bar height */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Below accent bar */
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a.active {
+    border-bottom: 3px solid #111111; /* Underline for active link */
+    text-underline-offset: 8px; /* Adjust as needed */
+}
+
+nav ul li a:hover:not(.active) {
+     border-bottom: 3px solid #ccc;
+}
+
+/* Main Content Area */
+main {
+    max-width: 900px;
+    margin: 40px auto; /* Top margin below header */
+    padding: 20px;
+}
+
+/* Home Page Specific Styles */
+.home-content {
+    text-align: center;
+}
+
+.headline {
+    font-size: 3.2rem; /* Adjusted for Black Ops One */
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.statistic {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Inter', sans-serif; /* Ensure body font */
+}
+
+.info-section {
+    margin-bottom: 40px;
+    text-align: left; /* Align list items left */
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid #ddd; /* Optional border */
+    border-radius: 5px;
+}
+
+.info-section h2 {
+    font-size: 1.5rem; /* Adjusted */
+    margin-bottom: 15px;
+    text-align: center; /* Center section titles */
+}
+
+.styled-list li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif; /* List item text in Inter */
+    display: flex; /* Use flexbox for alignment */
+    align-items: baseline; /* Align based on text baseline */
+}
+.styled-list li span { /* Style for [01], [02] */
+    font-family: 'Black Ops One', cursive; /* Number in Black Ops One */
+    margin-right: 10px;
+    display: inline-block;
+    width: 40px; /* Ensure alignment */
+    font-size: 1.1rem; /* Match surrounding text size */
+    text-align: right; /* Align number to the right */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.quote {
+    font-size: 1.8rem; /* Adjusted */
+    margin-top: 50px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+}
+
+.cta-heading {
+    font-size: 3rem; /* Adjusted */
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #FF6600; /* Accent color */
+}
+
+.apply-button {
+    display: inline-block;
+    background-color: #111111;
+    color: #FAF8F0;
+    padding: 15px 40px;
+    font-size: 1.1rem; /* Adjusted */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.apply-button:hover {
+    background-color: #333333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #555;
+    font-family: 'Inter', sans-serif; /* Footer text in Inter */
+}
+footer p:first-child { /* "DRAFTING NOW" */
+    font-family: 'Black Ops One', cursive; /* Use Font */
+    text-transform: uppercase;
+    font-size: 1rem; /* Adjusted */
+    margin-bottom: 5px;
+    color: #111; /* Make it black */
+}
+
+
+/* FAQ Page Specific Styles */
+.faq-content h1 {
+    font-size: 2.3rem; /* Adjusted */
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+    font-family: 'Inter', sans-serif; /* Not bold */
+    text-transform: none;
+}
+
+.faq-section {
+    margin-bottom: 30px;
+}
+
+.faq-section h2 {
+    font-size: 1.5rem; /* Adjusted */
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.faq-section h2 .icon {
+    margin-right: 10px;
+    font-size: 1.2em; /* Make icon slightly larger */
+}
+
+
+.faq-item {
+    border: 1px solid #111111;
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    background-color: transparent;
+    border: none;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem; /* Adjusted */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* font-family: 'Black Ops One', cursive; Inherited */
+    text-transform: none; /* Override default heading uppercase for questions */
+}
+
+
+.faq-question .arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    font-family: 'Inter', sans-serif; /* Use standard font for arrow */
+}
+
+.faq-question.active .arrow {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 20px; /* Start with no padding top/bottom */
+    background-color: #fff; /* Slightly different bg for contrast */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+    font-size: 1rem; /* Regular text size */
+    font-family: 'Inter', sans-serif; /* Ensure body font */
+}
+
+.faq-answer p, .faq-answer ul {
+    margin-bottom: 15px;
+}
+
+.faq-answer ul {
+    padding-left: 20px; /* Indent list */
+    list-style: disc; /* Use standard bullets */
+}
+.faq-answer li {
+    margin-bottom: 8px;
+}
+
+.faq-answer strong {
+     font-family: 'Inter', sans-serif;
+     font-weight: 700; /* Bold Inter */
+}
+.faq-answer em {
+     font-family: 'Inter', sans-serif;
+     font-style: italic; /* Italic Inter */
+}
+
+.faq-answer.active {
+    padding: 20px 20px; /* Add padding when active */
+    max-height: 1000px; /* Adjust max-height as needed */
+    transition: max-height 0.5s ease-in, padding 0.5s ease-in;
+}
+
+.closing-remark {
+    margin-top: 40px;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+    font-family: 'Inter', sans-serif; /* Ensure body font */
+}
+
+/* Manifesto Page Specific Styles */
+.manifesto-content {
+    max-width: 800px; /* Slightly wider */
+}
+
+.manifesto-content h2 {
+    font-size: 1.6rem; /* Adjusted */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.manifesto-content p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif; /* Ensure body font */
+}
+
+.final-call {
+     font-size: 2rem; /* Adjusted */
+     text-align: center;
+     margin-top: 40px;
+     color: #FF6600; /* Accent color */
+}
+
+
+/* Responsive Design - Adjust sizes for Black Ops One */
+@media (max-width: 768px) {
+     body {
+         /* Adjust top padding for potentially different header height on mobile */
+         padding-top: 80px; /* May need fine-tuning */
+     }
+    .logo {
+        font-size: 1.5rem; /* Adjusted */
+    }
+    nav ul li {
+        margin-left: 15px;
+    }
+     nav ul li a {
+         font-size: 0.9rem; /* Adjusted */
+         letter-spacing: 0.5px; /* Less spacing on mobile */
+     }
+
+    .headline {
+        font-size: 2.4rem; /* Adjusted */
+        letter-spacing: 0.5px;
+    }
+    .quote {
+        font-size: 1.4rem; /* Adjusted */
+        letter-spacing: 0.5px;
+    }
+    .cta-heading {
+        font-size: 2.1rem; /* Adjusted */
+    }
+    .apply-button {
+        padding: 12px 30px;
+        font-size: 1rem; /* Adjusted */
+    }
+    .info-section {
+        padding: 15px;
+    }
+     .info-section h2 {
+        font-size: 1.3rem; /* Adjusted */
+    }
+
+    .faq-content h1 {
+        font-size: 1.8rem; /* Adjusted */
+    }
+    .faq-section h2 {
+        font-size: 1.3rem; /* Adjusted */
+    }
+    .faq-question {
+        font-size: 0.95rem; /* Adjusted */
+        padding: 12px 15px;
+    }
+     .faq-answer {
+         font-size: 0.95rem;
+     }
+
+     .manifesto-content p {
+        font-size: 1rem;
+     }
+     .manifesto-content h2 {
+         font-size: 1.4rem; /* Adjusted */
+     }
+     .final-call {
+         font-size: 1.6rem; /* Adjusted */
+     }
+     footer p:first-child {
+         font-size: 0.9rem; /* Adjusted */
+     }
+
+}
+
+@media (max-width: 480px) {
+      body {
+         /* Recalculate padding if header stacking changes behavior */
+         padding-top: 4px; /* Only leave space for accent bar if header becomes relative */
+     }
+     .accent-bar {
+         height: 4px; /* Make bar thinner */
+     }
+     header {
+         padding: 10px 5%;
+         flex-direction: column;
+         align-items: flex-start;
+         position: relative; /* Let header scroll */
+         top: 0; /* Remove fixed positioning offset */
+         margin-top: 4px; /* Space below accent bar */
+         border-bottom: 1px solid #111; /* Thinner border */
+     }
+      nav ul {
+         margin-top: 10px;
+         width: 100%;
+         justify-content: space-around;
+      }
+       nav ul li {
+         margin-left: 0;
+       }
+        nav ul li a {
+         font-size: 0.8rem; /* Further reduce size */
+        }
+
+
+    .headline {
+        font-size: 1.8rem; /* Adjusted */
+    }
+    .quote {
+        font-size: 1.1rem; /* Adjusted */
+    }
+     .cta-heading {
+        font-size: 1.6rem; /* Adjusted */
+    }
+     .faq-content h1 {
+        font-size: 1.5rem;
+     }
+     .faq-section h2 {
+         font-size: 1.1rem;
+     }
+      .final-call {
+         font-size: 1.4rem;
+     }
+
+     main {
+         padding: 15px;
+         margin-top: 10px; /* Reduced */
+     }
+      footer {
+         margin-top: 40px;
+     }
+}
