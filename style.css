@@ -357,126 +357,108 @@ footer p:first-child { /* "DRAFTING NOW" */
 
 /* Responsive Design - Adjust sizes for Black Ops One */
 @media (max-width: 768px) {
-     body {
-         /* Adjust top padding for potentially different header height on mobile */
-         padding-top: 80px; /* May need fine-tuning */
-     }
+    body {
+        padding-top: 80px;
+    }
+    
     .logo {
-        font-size: 1.5rem; /* Adjusted */
+        font-size: 1.5rem;
     }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
     nav ul li {
-        margin-left: 15px;
+        margin: 0 10px;
     }
-     nav ul li a {
-         font-size: 0.9rem; /* Adjusted */
-         letter-spacing: 0.5px; /* Less spacing on mobile */
-     }
+    
+    nav ul li a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
 
     .headline {
-        font-size: 2.4rem; /* Adjusted */
+        font-size: 2.4rem;
         letter-spacing: 0.5px;
     }
+
     .quote {
-        font-size: 1.4rem; /* Adjusted */
+        font-size: 1.4rem;
         letter-spacing: 0.5px;
     }
+
     .cta-heading {
-        font-size: 2.1rem; /* Adjusted */
+        font-size: 2.1rem;
     }
+
     .apply-button {
         padding: 12px 30px;
-        font-size: 1rem; /* Adjusted */
+        font-size: 1rem;
     }
+
     .info-section {
         padding: 15px;
     }
-     .info-section h2 {
-        font-size: 1.3rem; /* Adjusted */
-    }
-
+    
     .faq-content h1 {
-        font-size: 1.8rem; /* Adjusted */
+        font-size: 1.8rem;
     }
+    
     .faq-section h2 {
-        font-size: 1.3rem; /* Adjusted */
+        font-size: 1.3rem;
     }
-    .faq-question {
-        font-size: 0.95rem; /* Adjusted */
-        padding: 12px 15px;
-    }
-     .faq-answer {
-         font-size: 0.95rem;
-     }
-
-     .manifesto-content p {
-        font-size: 1rem;
-     }
-     .manifesto-content h2 {
-         font-size: 1.4rem; /* Adjusted */
-     }
-     .final-call {
-         font-size: 1.6rem; /* Adjusted */
-     }
-     footer p:first-child {
-         font-size: 0.9rem; /* Adjusted */
-     }
-
 }
 
 @media (max-width: 480px) {
-      body {
-         /* Recalculate padding if header stacking changes behavior */
-         padding-top: 4px; /* Only leave space for accent bar if header becomes relative */
-     }
-     .accent-bar {
-         height: 4px; /* Make bar thinner */
-     }
-     header {
-         padding: 10px 5%;
-         flex-direction: column;
-         align-items: flex-start;
-         position: relative; /* Let header scroll */
-         top: 0; /* Remove fixed positioning offset */
-         margin-top: 4px; /* Space below accent bar */
-         border-bottom: 1px solid #111; /* Thinner border */
-     }
-      nav ul {
-         margin-top: 10px;
-         width: 100%;
-         justify-content: space-around;
-      }
-       nav ul li {
-         margin-left: 0;
-       }
-        nav ul li a {
-         font-size: 0.8rem; /* Further reduce size */
-        }
-
-
+    body {
+        padding-top: 4px;
+    }
+    
+    .accent-bar {
+        height: 4px;
+    }
+    
+    header {
+        padding: 10px 5%;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 0;
+        margin-top: 4px;
+        border-bottom: 1px solid #111;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    nav ul li a {
+        font-size: 1rem;
+        padding: 10px 20px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    
     .headline {
-        font-size: 1.8rem; /* Adjusted */
+        font-size: 1.8rem;
     }
+    
     .quote {
-        font-size: 1.1rem; /* Adjusted */
+        font-size: 1.1rem;
     }
-     .cta-heading {
-        font-size: 1.6rem; /* Adjusted */
+    
+    .cta-heading {
+        font-size: 1.6rem;
     }
-     .faq-content h1 {
-        font-size: 1.5rem;
-     }
-     .faq-section h2 {
-         font-size: 1.1rem;
-     }
-      .final-call {
-         font-size: 1.4rem;
-     }
-
-     main {
-         padding: 15px;
-         margin-top: 10px; /* Reduced */
-     }
-      footer {
-         margin-top: 40px;
-     }
 }
