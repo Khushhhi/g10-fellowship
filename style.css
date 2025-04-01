@@ -9,7 +9,11 @@
 .accent-bar {
     height: 6px; /* Adjust height as needed */
     width: 100%;
-    background: linear-gradient(to right, #FF6600 33.3%, #f2f2f2 33.3%, #006400 33.3%); /* Orange, Dark Green, White */
+    background: linear-gradient(to right, 
+        #FF6600 0%, #FF6600 33.3%, 
+        #f2f2f2 33.3%, #f2f2f2 66.6%, 
+        #006400 66.6%, #006400 100%
+    ); /* Orange, White, Dark Green */
     position: fixed;
     top: 0;
     left: 0;
