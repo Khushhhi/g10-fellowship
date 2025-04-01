@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/manifesto", "destination": "/manifesto.html" },
+    { "source": "/companies", "destination": "/companies.html" }
+  ]
+}
