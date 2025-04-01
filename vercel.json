@@ -1,6 +1,6 @@
 {
   "cleanUrls": true,
-  "rewrites": [
+  "redirects": [
     { "source": "/faq", "destination": "/faq.html" },
     { "source": "/manifesto", "destination": "/manifesto.html" },
     { "source": "/companies", "destination": "/companies.html" }
