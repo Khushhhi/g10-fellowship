@@ -1,8 +1,8 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/faq", "destination": "/faq.html" },
-    { "source": "/manifesto", "destination": "/manifesto.html" },
-    { "source": "/companies", "destination": "/companies.html" }
+    { "source": "/faq", "destination": "/faq.html", "permanent": true },
+    { "source": "/manifesto", "destination": "/manifesto.html", "permanent": true },
+    { "source": "/companies", "destination": "/companies.html", "permanent": true }
   ]
 }
