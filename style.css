@@ -354,6 +354,85 @@ footer p:first-child { /* "DRAFTING NOW" */
      color: #FF6600; /* Accent color */
 }
 
+/* Companies Page Specific Styles */
+.companies-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.companies-content .headline {
+    font-size: 2.8rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.companies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.company-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 25px 15px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.company-name {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-family: 'Black Ops One', cursive;
+    letter-spacing: 1px;
+}
+
+.company-link {
+    display: inline-block;
+    background-color: #111111;
+    color: #FAF8F0;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: 'Black Ops One', cursive;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.company-link:hover {
+    background-color: #FF6600;
+}
+
+/* Responsive adjustments for companies grid */
+@media (max-width: 768px) {
+    .companies-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .company-name {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .companies-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .companies-content .headline {
+        font-size: 1.8rem;
+    }
+}
+
 
 /* Responsive Design - Adjust sizes for Black Ops One */
 @media (max-width: 768px) {
