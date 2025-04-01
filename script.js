@@ -1,24 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const routes = {
-    '/': 'index.html',
-    '/apply': 'https://airtable.com/appQU0zWgLPP70fmz/pagHP09q6RLIdzITQ/form',
-    '/faq': 'faq.html',
-    '/manifesto': 'manifesto.html'
-  };
-  
-  const path = window.location.pathname;
-  if (routes[path]) {
-    if (path === '/apply') {
-      window.location.href = routes[path];
-    } else {
-      fetch(routes[path])
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('home-content').innerHTML = html;
-        });
-    }
-  }
-});
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
