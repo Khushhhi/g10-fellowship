@@ -33,3 +33,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+const hamburger = document.querySelector(".hamburger");
+  const nav = document.querySelector("nav");
+  
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    nav.classList.toggle("active");
+    
+    // Prevent scrolling when menu is open
+    document.body.classList.toggle("no-scroll");
+  });
+  
+  // Close menu when clicking on a link
+  document.querySelectorAll("nav ul li a").forEach(link => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      nav.classList.remove("active");
+      document.body.classList.remove("no-scroll");
+    });
+  });
