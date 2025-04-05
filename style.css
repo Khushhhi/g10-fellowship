@@ -88,6 +88,13 @@ ul {
 .nav-button:hover {
     background-color: #333333;
 }
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
 
 
 /* Header */
