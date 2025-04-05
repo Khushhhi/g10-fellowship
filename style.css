@@ -459,7 +459,7 @@ footer p:first-child { /* "DRAFTING NOW" */
     .info-container .info-section:last-child {
         margin-bottom: 0;
     }
-}
+
     .companies-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
