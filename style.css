@@ -412,6 +412,18 @@ footer p:first-child { /* "DRAFTING NOW" */
 
 /* Responsive adjustments for companies grid */
 @media (max-width: 768px) {
+        .info-container {
+        flex-direction: column;
+    }
+    
+    .info-container .info-section {
+        margin-bottom: 40px;
+    }
+    
+    .info-container .info-section:last-child {
+        margin-bottom: 0;
+    }
+}
     .companies-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -478,6 +490,17 @@ footer p:first-child { /* "DRAFTING NOW" */
         font-size: 1rem;
     }
 
+    .info-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .info-container .info-section {
+        flex: 1;
+        margin-bottom: 0;
+    }
     .info-section {
         padding: 15px;
     }
