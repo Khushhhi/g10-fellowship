@@ -432,6 +432,15 @@ footer p:first-child { /* "DRAFTING NOW" */
     letter-spacing: 1px;
 }
 
+.company-logo {
+    display: block;         /* Makes the image a block element for centering */
+    height: 50px;           /* Set your desired uniform height */
+    width: auto;            /* Allows width to adjust based on height & aspect ratio */
+    max-width: 100%;        /* Prevents the image from exceeding card width */
+    margin: 0 auto 15px auto; /* Centers horizontally (0 top/bottom, auto left/right) and adds 15px margin below */
+    object-fit: contain;    /* Ensures the entire logo fits within the dimensions without stretching/cropping */
+}
+
 .company-link {
     display: inline-block;
     background-color: #111111;
