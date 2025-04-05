@@ -378,6 +378,18 @@ footer p:first-child { /* "DRAFTING NOW" */
     margin-bottom: 15px;
 }
 
+.manifesto-bullets {
+    list-style-type: disc; /* Explicitly sets the bullet style (disc, circle, square) */
+    padding-left: 25px;    /* Adds indentation FROM THE LEFT for the bullets to appear */
+    margin-top: 1em;       /* Adds space above the list */
+    margin-bottom: 1.5em;  /* Adds space below the list */
+}
+
+.manifesto-bullets li {
+    margin-bottom: 0.5em;  /* Adds vertical space BETWEEN bullet points */
+    line-height: 1.4;      /* Improves readability if lines wrap */
+}
+
 .manifesto-content p {
     margin-bottom: 20px;
     font-size: 1.1rem;
