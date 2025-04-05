@@ -435,9 +435,8 @@ footer p:first-child { /* "DRAFTING NOW" */
     background-color: #FF6600;
 }
 
-/* Responsive adjustments for companies grid */
 @media (max-width: 768px) {
-        .info-container {
+    .info-container {
         flex-direction: column;
     }
     
@@ -468,6 +467,7 @@ footer p:first-child { /* "DRAFTING NOW" */
         text-align: center;
     }
 }
+
 
 @media (max-width: 480px) {
     .companies-grid {
