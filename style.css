@@ -736,7 +736,7 @@ footer p:first-child { /* "DRAFTING NOW" */
     font-family: 'Black Ops One', sans-serif; /* Match your other headers */
     font-size: 1.5em;     /* Adjust size as needed */
     padding: 10px 25px;   /* Padding inside the border (top/bottom, left/right) */
-    border: 1px solid black; /* The requested border */
+    border: 2px solid black; /* The requested border */
     text-transform: uppercase; /* Optional: if you want uppercase */
     letter-spacing: 1px;   /* Optional: Adjust letter spacing */
     margin: 0;            /* Remove default H2 margin if needed */
@@ -749,7 +749,7 @@ footer p:first-child { /* "DRAFTING NOW" */
     
     /* --- Adjustments --- */
     /* background-color: white; */ /* REMOVE or comment out this line */
-    border: 2px solid black;   /* ADD this line */
+    border: 3px solid black;   /* ADD this line */
     padding: 20px;             /* KEEP this - space between image and border */
     max-width: 840px;          /* KEEP this - adjust based on image width + padding */
     margin-left: auto;         /* KEEP this - centers the bordered box */
