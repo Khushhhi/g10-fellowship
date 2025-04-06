@@ -724,3 +724,17 @@ footer p:first-child { /* "DRAFTING NOW" */
     top: 53px; /* Adjust based on your header height */
   }
 }
+
+.logos-section {
+    text-align: center; 
+    margin-top: 40px;   
+    margin-bottom: 50px;
+    padding: 0 20px;    
+}
+
+.partner-logos-banner {
+    max-width: 100%;    
+    width: 800px;       
+    height: auto;       
+    display: inline-block; 
+}
