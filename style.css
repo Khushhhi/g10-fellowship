@@ -749,7 +749,7 @@ footer p:first-child { /* "DRAFTING NOW" */
     
     /* --- Adjustments --- */
     /* background-color: white; */ /* REMOVE or comment out this line */
-    border: 1px solid black;   /* ADD this line */
+    border: 2px solid black;   /* ADD this line */
     padding: 20px;             /* KEEP this - space between image and border */
     max-width: 840px;          /* KEEP this - adjust based on image width + padding */
     margin-left: auto;         /* KEEP this - centers the bordered box */
