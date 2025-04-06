@@ -732,14 +732,16 @@ footer p:first-child { /* "DRAFTING NOW" */
 }
 
 .logos-header {
-    display: inline-block; /* Allows padding and border to contain the text */
-    font-family: 'Black Ops One', sans-serif; /* Match your other headers */
-    font-size: 1.5em;     /* Adjust size as needed */
-    padding: 10px 25px;   /* Padding inside the border (top/bottom, left/right) */
-    border: 2px solid black; /* The requested border */
-    text-transform: uppercase; /* Optional: if you want uppercase */
-    letter-spacing: 1px;   /* Optional: Adjust letter spacing */
-    margin: 0;            /* Remove default H2 margin if needed */
+    display: inline-block; 
+    font-family: 'Black Ops One', sans-serif; 
+    font-size: 1.5em;     
+    padding: 0; /* Remove padding if border is gone */ 
+    /* border: 1px solid black; */ /* REMOVE or comment out this line */
+    text-transform: uppercase; 
+    letter-spacing: 1px;   
+    margin: 0; 
+    /* Add margin below if needed now border is gone */
+    margin-bottom: 15px; /* Added space below heading text */
 }
 
 .logos-section {
@@ -749,8 +751,8 @@ footer p:first-child { /* "DRAFTING NOW" */
     
     /* --- Adjustments --- */
     /* background-color: white; */ /* REMOVE or comment out this line */
-    border: 3px solid black;   /* ADD this line */
-    padding: 20px;             /* KEEP this - space between image and border */
+    border: 4px solid black;   /* ADD this line */
+    padding: 25px;             /* KEEP this - space between image and border */
     max-width: 840px;          /* KEEP this - adjust based on image width + padding */
     margin-left: auto;         /* KEEP this - centers the bordered box */
     margin-right: auto;        /* KEEP this - centers the bordered box */
@@ -762,4 +764,22 @@ footer p:first-child { /* "DRAFTING NOW" */
     height: auto;       
     display: block;     /* Changed to block for easier centering within padded parent */
     margin: 0 auto;     /* Center the image block within the .logos-section */ 
+}
+
+.cta-description {
+    /* Add/Ensure font styling to match body text */
+    font-family: 'Inter', sans-serif; /* Match your body font */
+    font-weight: 400;             /* Ensure regular weight */
+    font-size: 1.1em;             /* Adjust size if needed */
+    color: #333;                  /* Match body text color */
+    line-height: 1.6;             /* Match body text line height */
+
+    /* Keep centering and width limit */
+    max-width: 650px;            
+    margin-left: auto;
+    margin-right: auto;
+
+    /* INCREASE bottom margin for more space before button */
+    margin-top: 0; 
+    margin-bottom: 40px; /* INCREASED from previous value */
 }
