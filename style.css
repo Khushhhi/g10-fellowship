@@ -780,6 +780,6 @@ footer p:first-child { /* "DRAFTING NOW" */
     margin-right: auto;
 
     /* INCREASE bottom margin for more space before button */
-    margin-top: 80px; 
+    margin-top: 40px; 
     margin-bottom: 40px; /* INCREASED from previous value */
 }
