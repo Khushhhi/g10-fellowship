@@ -725,16 +725,39 @@ footer p:first-child { /* "DRAFTING NOW" */
   }
 }
 
+.logos-header-container {
+    text-align: center; /* Centers the H2 within this container */
+    margin-top: 50px;   /* Space above the header */
+    margin-bottom: 20px;/* Space below the header, before the logos image */
+}
+
+.logos-header {
+    display: inline-block; /* Allows padding and border to contain the text */
+    font-family: 'Black Ops One', sans-serif; /* Match your other headers */
+    font-size: 1.5em;     /* Adjust size as needed */
+    padding: 10px 25px;   /* Padding inside the border (top/bottom, left/right) */
+    border: 1px solid black; /* The requested border */
+    text-transform: uppercase; /* Optional: if you want uppercase */
+    letter-spacing: 1px;   /* Optional: Adjust letter spacing */
+    margin: 0;            /* Remove default H2 margin if needed */
+}
+
 .logos-section {
     text-align: center; 
-    margin-top: 40px;   
+    margin-top: 0;   
     margin-bottom: 50px;
-    padding: 0 20px;    
+    padding: 20px;
+    background-color: white; /* ADDED: Workaround for image background */
+    max-width: 840px; /* ADDED: Limit width of the white box itself */
+                     /* Adjust this based on the width set for .partner-logos-banner + padding */
+    margin-left: auto;  /* ADDED: Center the white box */
+    margin-right: auto; /* ADDED: Center the white box */
 }
 
 .partner-logos-banner {
     max-width: 100%;    
     width: 800px;       
     height: auto;       
-    display: inline-block; 
+    display: block;     /* Changed to block for easier centering within padded parent */
+    margin: 0 auto;     /* Center the image block within the .logos-section */ 
 }
