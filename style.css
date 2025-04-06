@@ -456,6 +456,17 @@ footer p:first-child { /* "DRAFTING NOW" */
     object-fit: contain;    /* Ensures the entire logo fits within the dimensions without stretching/cropping */
 }
 
+.company-description {
+    font-size: 0.9em;      /* Adjust size as needed */
+    color: #333;          /* Dark grey color */
+    line-height: 1.5;      /* Increased slightly for better spacing around <br> */
+    margin-top: 10px;      /* Space above the paragraph (after logo) */
+    margin-bottom: 15px;   /* INCREASED: Space below the paragraph (before button) */
+    padding-left: 5px;     /* Optional: slight indent */
+    padding-right: 5px;    /* Optional: slight indent */
+    font-weight: 400;      /* Ensure regular weight */
+}
+
 .company-link {
     display: inline-block;
     background-color: #111111;
